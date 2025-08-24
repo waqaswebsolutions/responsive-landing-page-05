@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: system-ui, sans-serif;
+  background-color: #fff;
+  color: #000;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.parent-container {
+  min-height: 100%;
+  width: 100%;
+  background-color: transparent;
+}
+
+.parent-first {
+  height: 200px;
+  width: 100%;
+  background-color: transparent;
+  padding: 1.5vw;
+}
+
+.first-child {
+  height: 100%;
+  width: 400px;
+  /* background-color: blue; */
+}
+
+.parent-first h1 {
+  font-size: 4vw;
+  font-family: "Lato", sans-serif;
+}
+
+.parent-second {
+  height: 200px;
+  width: 100%;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-around;
+}
+
+.second-one {
+  height: 100%;
+  width: 33%;
+  background-color: transparent;
+}
+
+.second-two {
+  height: 100%;
+  width: 33%;
+  background-color: transparent;
+}
+
+.second-three {
+  height: 100%;
+  width: 33%;
+  background-color: transparent;
+}
+
+.parent-third {
+  height: 250px;
+  width: 100%;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-around;
+}
+
+.topp {
+  height: 50px;
+  width: 100%;
+  background-color: transparent;
+  padding: 0 20px;
+
+}
+
+.topp h2 {
+  opacity: 0.5;
+  font-family: "Lato", sans-serif;
+}
+
+.bottomm {
+  height: calc(100% - 50px);
+  width: 100%;
+  background-color: transparent;
+  padding: 10px 20px;
+
+}
+
+.bottomm p {
+  font-size: 1.3vw;
+  opacity: 0.7;
+  font-family: "Lato", sans-serif;
+}
+
+.third-one,
+.third-two,
+.third-three {
+  height: 100%;
+  width: 33%;
+  background-color: transparent;
+}
+
+.third-one {
+  background-image: url(Images/edgar-soto-gb0BZGae1Nk-unsplash\ \(1\).jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.third-two {
+  background-image: url(Images/mariano-rivas-ZYet8yoepik-unsplash\ \(1\).jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.third-three {
+  background-image: url(Images/viktor-mindt-4yWWIEKOBaU-unsplash\ \(1\).jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+@media (min-width:600px) and (max-width:900px) {
+  .parent-first .first-child {
+    width: 50%;
+  }
+
+  .parent-first h1 {
+    font-size: 7vw;
+  }
+
+  .parent-second h2 {
+    font-size: 40px;
+  }
+
+  .parent-second p {
+    font-size: 1.6vw;
+  }
+
+
+}
+
+@media (max-width:600px) {
+  .parent-first .first-child{
+    width: 100%;
+    background-color: transparent;
+    /* padding: 1.5vw; */
+
+
+  }
+  .parent-second{
+    flex-direction: column;
+    height: 500px;
+    margin-top: 30px;
+  }
+  .second-one, .second-two, .second-three{
+    width: 100%;
+    padding: 2vw 0;
+  }
+  .topp{
+    font-size: 4vw;
+  }
+  .bottomm p{
+    font-size:3vw;
+  }
+  .parent-first{
+    height: 90px;
+  }
+  .parent-first h1{
+    font-size: 10vw ;
+  }
+  .parent-third{
+    flex-direction: column;
+    height: 500px;
+  }
+  .third-one, .third-two, .third-three{
+    width: 100%;
+  }
+}
