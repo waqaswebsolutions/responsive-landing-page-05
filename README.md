@@ -54,7 +54,7 @@ This is a fully responsive landing page built using **HTML5** and **CSS3**. It�
 
 ## 📂 Project Structure
 
-responsive-landing-page-02/
+responsive-landing-page-05/
 ├── index.html
 ├── style.css
 ├── Images/
